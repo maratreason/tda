@@ -1,0 +1,26 @@
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+
+    &__item {
+        width: 10px;
+        height: 10px;
+        background: transparent;
+        border: 1px solid var(--green);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: var(--transition-1);
+        
+        &.active {
+            background-color: var(--green);
+        }
+
+        &:hover{
+            background-color: var(--green-light);
+            border-color: var(--green-light);
+        }
+    }
+}

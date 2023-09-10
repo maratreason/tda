@@ -1,0 +1,22 @@
+extends pug/base
+
+append content
+    include pug/includes/header
+
+    .section.not-found
+        .container
+            .not-found__info
+                .title-2 Страница не найдена
+                p.not-found__text Воспользуйтесь писком на сайте или перейдите на главную страницу
+                .not-found__actions
+                    .search-input
+                        input(type="text" placeholder="Поиск по списку")
+                        button.search-input__btn
+                            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M11 17C15.4183 17 19 13.4183 19 9C19 4.58172 15.4183 1 11 1C6.58172 1 3 4.58172 3 9C3 13.4183 6.58172 17 11 17Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M21.0004 18.9999L16.6504 14.6499" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+            
+                    button.btn.btn-outlined.btn-sm Перейти на главную
+            .not-found__title 404
+
+    include pug/includes/footer

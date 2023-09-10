@@ -1,0 +1,554 @@
+extends pug/base
+
+append content
+    include pug/includes/header
+
+    .section.section-catalog-detail
+        .section-menu
+            ul.section-menu__list
+                li.section-menu__item
+                    p 1 560 ₽
+                    a.btn.btn-rounded(href="/cabinet-orders.html")
+                        .btn-badge 2
+                        .btn-rounded__img
+                            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                li.section-menu__item
+                    button.btn.btn-rounded
+                        .btn-rounded__img
+                            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M13 2V9H20" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                    
+                li.section-menu__item
+                    button.btn.btn-rounded
+                        .btn-rounded__img
+                            svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M26.6666 28V25.3333C26.6666 23.9188 26.1047 22.5623 25.1045 21.5621C24.1043 20.5619 22.7477 20 21.3333 20H10.6666C9.2521 20 7.89554 20.5619 6.89535 21.5621C5.89515 22.5623 5.33325 23.9188 5.33325 25.3333V28" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M16.0001 14.6667C18.9456 14.6667 21.3334 12.2789 21.3334 9.33333C21.3334 6.38781 18.9456 4 16.0001 4C13.0546 4 10.6667 6.38781 10.6667 9.33333C10.6667 12.2789 13.0546 14.6667 16.0001 14.6667Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+        .container
+            +breadcrumbs("Главная", "Каталог", "Овощи, Фрукты, Зелень, Грибы")
+            .title-2.section-catalog__title Овощи, фрукты, зелень, грибы
+
+            .catalog-detail__filter
+                button.btn.btn-rounded(data-catalog-filter)
+                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 1H1L9 10.46V17L13 19V10.46L21 1Z" stroke="#82BA01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                a.link(href="" data-catalog-filter) Фильтр
+
+            .catalog-detail__inner
+
+                .catalog-detail__sitebar.sitebar(data-catalog-filter-content)
+                    a.sitebar__header(href="#")
+                        svg(width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M5 9L1 5L5 1" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                        span(data-catalog-filter-close) Назад
+                    .sitebar__box
+                        .sitebar__title.title-4 Категории
+                        ul.sitebar__categories-list
+                            li.sitebar__categories-item Овощи
+                            li.sitebar__categories-item Фрукты
+                            li.sitebar__categories-item Ягоды
+                            li.sitebar__categories-item Зелень, салаты, травы
+                            li.sitebar__categories-item Грибы
+
+                    .sitebar__box
+                        .sitebar__title.title-4 Предложения
+                        .sitebar__box-item
+                            .sitebar__box-checkbox
+                                input.checkbox(type="checkbox" checked)
+                                label.sitebar__box-checkbox-label Со скидкой
+                            span (300)
+                        .sitebar__box-item
+                            .sitebar__box-checkbox
+                                input.checkbox(type="checkbox")
+                                label.sitebar__box-checkbox-label Новинка
+                            span (300)
+                        .sitebar__box-item
+                            .sitebar__box-checkbox
+                                input.checkbox(type="checkbox")
+                                label.sitebar__box-checkbox-label Акции
+                            span (300)
+
+                    .accordion(data-accordion)
+                        .sitebar__box.accordion__control(data-accordion-control)
+                            .sitebar__title.accordion__title.title-4(data-accordion-title) Цена, ₽
+                            .sitebar__box-item.accordion__content(data-accordion-content)
+                                .sitebar__box-range
+                                    .price-input
+                                        .field
+                                            input.input-min(type="number" value="2500")
+                                        .separator -
+                                        .field
+                                            input.input-max(type="number" value="7500")
+                                    .slider
+                                        .progress
+
+                                    .range-input
+                                        input.range-min(type="range" min="0" max="10000" value="2500" step="10")
+                                        input.range-max(type="range" min="0" max="10000" value="7500" step="10")
+
+                                    .range-price.text-small
+                                        .range-price__min 2500 ₽
+                                        .range-price__max 7500 ₽
+
+                        .sitebar__box.accordion__control(data-accordion-control)
+                            .sitebar__title.accordion__title.title-4(data-accordion-title) Тип продукта
+                        
+                            .sitebar__box-item.accordion__content(data-accordion-content)
+                                .search-input
+                                    input(type="text" placeholder="Поиск по списку")
+                                    button.search-input__btn
+                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M11 17C15.4183 17 19 13.4183 19 9C19 4.58172 15.4183 1 11 1C6.58172 1 3 4.58172 3 9C3 13.4183 6.58172 17 11 17Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M21.0004 18.9999L16.6504 14.6499" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                            .sitebar__list
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Авокадо
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Аджика
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Айва
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Ананас
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Апельсин
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Арбуз
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Артишок
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Ассорти грибов
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Ассорти овощей
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Ассорти фруктов
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Апельсин
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Арбуз
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Ассорти овощей
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Ассорти фруктов
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Апельсин
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Арбуз
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Ассорти овощей
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Ассорти фруктов
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Апельсин
+                                .sitebar__box-item
+                                    .sitebar__box-checkbox
+                                        input.checkbox(type="checkbox")
+                                        label.sitebar__box-checkbox-label Арбуз
+
+                        .sitebar__box.accordion__control(data-accordion-control)
+                            .sitebar__title.accordion__title.title-4(data-accordion-title) Не содержит
+                            .sitebar__box-item.accordion__content(data-accordion-content) Content
+
+                        .sitebar__box.accordion__control(data-accordion-control)
+                            .sitebar__title.accordion__title.title-4(data-accordion-title) Особенности
+                            .sitebar__box-item.accordion__content(data-accordion-content) Content
+
+                        .sitebar__box.accordion__control(data-accordion-control)
+                            .sitebar__title.accordion__title.title-4(data-accordion-title) Бренд
+                            .sitebar__box-item.accordion__content(data-accordion-content) Content
+
+                        .sitebar__box.accordion__control(data-accordion-control)
+                            .sitebar__title.accordion__title.title-4(data-accordion-title) Страна
+                            .sitebar__box-item.accordion__content(data-accordion-content) Content
+
+                    .sitebar__box
+                        button.btn.btn-outlined Сбросить всё
+
+                .catalog-detail__content
+                    .catalog-detail__content-top
+                        .catalog-detail__content-changes
+                            .select(data-select)
+                                .select-text
+                                    span Показывать по 40
+                                    .btn-dropdown__icon
+                                        img(src="images/icons/chevron-down.svg", alt="" data-select-icon)
+
+                                ul.select-list
+                                    li.select-item Показывать по 40
+                                    li.select-item Показывать по 30
+                                    li.select-item Показывать по 20
+
+                            .select(data-select)
+                                .select-text
+                                    span По популярности
+                                    .btn-dropdown__icon
+                                        img(src="images/icons/chevron-down.svg", alt="" data-select-icon)
+
+                                ul.select-list
+                                    li.select-item По популярности
+                                    li.select-item По названию
+                                    li.select-item По цене
+
+                            .select(data-select)
+                                .select-text
+                                    span По возрастанию цены
+                                    .btn-dropdown__icon
+                                        img(src="images/icons/chevron-down.svg", alt="" data-select-icon)
+
+                                ul.select-list
+                                    li.select-item По возрастанию цены
+                                    li.select-item По убыванию цены
+
+                        .catalog-detail__content-btns
+                            button.btn.btn-rounded.btn-primary
+                                img(src="images/icons/more-vertical.svg", alt="")
+                            button.btn.btn-rounded.btn-primary-outlined
+                                img(src="images/icons/more-horizontal.svg", alt="")
+
+                    ul.catalog-detail__chips-list
+                        li.catalog-detail__chips-item
+                            button.btn.btn-success.btn-chips Со скидкой
+                                img(src="images/icons/exit.svg", alt="")
+                        li.catalog-detail__chips-item
+                            button.btn.btn-success.btn-success-outlined.btn-chips Сбросить все
+
+                    .catalog-detail__content-products
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                        .product-card
+                            .product-card__img-wrapper
+                                img.product-card__img(src="images/products/product-1.png", alt="")
+                                .product-card__box
+                                    .product-card__colors.product-card__colors-red -40%
+                                    .product-card__colors.product-card__colors-green Новинка
+                                    .product-card__colors.product-card__colors-blue Хит
+                            .product-card__content
+                                .product-card__title Морковь мытая 0.7-1.0 кг
+                                .product-card__old-price.text-small 99,90 ₽/кг
+                                .product-card__price.title-4 59,90 ₽/кг
+                            .product-card__btns
+                                .product-card__count.count(data-count)
+                                    button.product-card__count-btn.count-btn.count-btn__minus(data-count-btn-minus="true") -
+                                    .product-card__count-number(data-count-number) 1
+                                    button.product-card__count-btn.count-btn.count-btn__plus(data-count-btn-plus="true") +
+                                button.btn.btn-outlined.btn-sm.product-card__btn В корзину
+
+                    .line
+
+                    .catalog-detail__content-pagination
+                        button.btn.btn-primary Показать еще
+                        .pagination
+                            ul.pagination__list
+                                li.pagination__item
+                                    a.pagination__link.pagination__link--active(href="#") 1
+                                li.pagination__item
+                                    a.pagination__link(href="#") 2
+                                li.pagination__item
+                                    a.pagination__link(href="#") 3
+                                li.pagination__item
+                                    a.pagination__link(href="#") 4
+                                li.pagination__item
+                                    a.pagination__link(href="#") 5
+                                li.pagination__item
+                                    a.pagination__link(href="#") ...
+                                li.pagination__item
+                                    a.pagination__link(href="#") 8
+
+
+    include pug/includes/footer

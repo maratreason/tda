@@ -1,0 +1,31 @@
+.pagination {
+    &__list {
+        display: flex;
+        gap: 1rem;
+    }
+    &__item {
+        width: 4rem;
+        height: 4rem;
+    }
+    &__link {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--black);
+        border-radius: var(--radius-6);
+        transition: var(--transition-1);
+
+        &:hover {
+            background: var(--green);
+            color: var(--white);
+        }
+
+        &--active {
+            background: var(--green);
+            color: var(--white) !important;
+        }
+    }
+}

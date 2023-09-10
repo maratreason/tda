@@ -1,0 +1,553 @@
+extends pug/base
+
+append content
+    include pug/includes/header
+
+    main
+        .main-swiper-slider.swiper-slider.swiper
+            .slider-buttons__wrapper
+                .container
+                    .slider-buttons
+                        button.btn.btn-rounded.btn-rounded--filled-active.swiper-button-prev
+                            .btn-rounded__img
+                                svg(width="12" height="12" viewBox="0 0 14 14" fill="" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M13 7L13.7071 7.70711C14.0976 7.31658 14.0976 6.68342 13.7071 6.29289L13 7ZM6.29289 12.2929C5.90237 12.6834 5.90237 13.3166 6.29289 13.7071C6.68342 14.0976 7.31658 14.0976 7.70711 13.7071L6.29289 12.2929ZM7.70711 0.292893C7.31658 -0.0976315 6.68342 -0.0976315 6.29289 0.292893C5.90237 0.683417 5.90237 1.31658 6.29289 1.70711L7.70711 0.292893ZM1 6C0.447715 6 0 6.44772 0 7C0 7.55228 0.447715 8 1 8L1 6ZM12.2929 6.29289L6.29289 12.2929L7.70711 13.7071L13.7071 7.70711L12.2929 6.29289ZM6.29289 1.70711L12.2929 7.70711L13.7071 6.29289L7.70711 0.292893L6.29289 1.70711ZM1 8H13V6L1 6L1 8Z" fill="")
+                        button.btn.btn-rounded.btn-rounded--filled-active.swiper-button-next
+                            .btn-rounded__img
+                                svg(width="12" height="12" viewBox="0 0 14 14" fill="" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M13 7L13.7071 7.70711C14.0976 7.31658 14.0976 6.68342 13.7071 6.29289L13 7ZM6.29289 12.2929C5.90237 12.6834 5.90237 13.3166 6.29289 13.7071C6.68342 14.0976 7.31658 14.0976 7.70711 13.7071L6.29289 12.2929ZM7.70711 0.292893C7.31658 -0.0976315 6.68342 -0.0976315 6.29289 0.292893C5.90237 0.683417 5.90237 1.31658 6.29289 1.70711L7.70711 0.292893ZM1 6C0.447715 6 0 6.44772 0 7C0 7.55228 0.447715 8 1 8L1 6ZM12.2929 6.29289L6.29289 12.2929L7.70711 13.7071L13.7071 7.70711L12.2929 6.29289ZM6.29289 1.70711L12.2929 7.70711L13.7071 6.29289L7.70711 0.292893L6.29289 1.70711ZM1 8H13V6L1 6L1 8Z" fill="")
+                        
+            .slider-wrapper.swiper-wrapper
+                .slider-card.swiper-slide
+                    a.slider-card__link(href="/product.html") 
+                        img.slider-img(src="images/sliders/main/1.png", alt="slider image 1")
+                    .slider-card__content
+                        .slider-card__title Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20
+                        .slider-card__bottom
+                            .slider-card__price
+                                .slider-card__old-price 55,90 ₽
+                                .slider-card__new-price 42,30 ₽
+                            .slider-card__icon
+                                button.btn.btn-rounded
+                                    .btn-rounded__img
+                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                .slider-card.swiper-slide
+                    a.slider-card__link(href="/product.html") 
+                        img.slider-img(src="images/sliders/main/2.png", alt="slider image 1")
+                    .slider-card__content
+                        .slider-card__title Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20
+                        .slider-card__bottom
+                            .slider-card__price
+                                .slider-card__old-price 55,90 ₽
+                                .slider-card__new-price 42,30 ₽
+                            .slider-card__icon
+                                button.btn.btn-rounded
+                                    .btn-rounded__img
+                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                .slider-card.swiper-slide
+                    a.slider-card__link(href="/product.html") 
+                        img.slider-img(src="images/sliders/main/3.png", alt="slider image 1")
+                    .slider-card__content
+                        .slider-card__title Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20
+                        .slider-card__bottom
+                            .slider-card__price
+                                .slider-card__old-price 55,90 ₽
+                                .slider-card__new-price 42,30 ₽
+                            .slider-card__icon
+                                button.btn.btn-rounded
+                                    .btn-rounded__img
+                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                .slider-card.swiper-slide
+                    a.slider-card__link(href="/product.html") 
+                        img.slider-img(src="images/sliders/main/4.png", alt="slider image 1")
+                    .slider-card__content
+                        .slider-card__title Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20
+                        .slider-card__bottom
+                            .slider-card__price
+                                .slider-card__old-price 55,90 ₽
+                                .slider-card__new-price 42,30 ₽
+                            .slider-card__icon
+                                button.btn.btn-rounded
+                                    .btn-rounded__img
+                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                .slider-card.swiper-slide
+                    a.slider-card__link(href="/product.html") 
+                        img.slider-img(src="images/sliders/main/5.png", alt="slider image 1")
+                    .slider-card__content
+                        .slider-card__title Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20
+                        .slider-card__bottom
+                            .slider-card__price
+                                .slider-card__old-price 55,90 ₽
+                                .slider-card__new-price 42,30 ₽
+                            .slider-card__icon
+                                button.btn.btn-rounded
+                                    .btn-rounded__img
+                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                .slider-card.swiper-slide
+                    a.slider-card__link(href="/product.html") 
+                        img.slider-img(src="images/sliders/main/6.png", alt="slider image 1")
+                    .slider-card__content
+                        .slider-card__title Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20
+                        .slider-card__bottom
+                            .slider-card__price
+                                .slider-card__old-price 55,90 ₽
+                                .slider-card__new-price 42,30 ₽
+                            .slider-card__icon
+                                button.btn.btn-rounded
+                                    .btn-rounded__img
+                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                .slider-card.swiper-slide
+                    a.slider-card__link(href="/product.html") 
+                        img.slider-img(src="images/sliders/main/7.png", alt="slider image 1")
+                    .slider-card__content
+                        .slider-card__title Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20
+                        .slider-card__bottom
+                            .slider-card__price
+                                .slider-card__old-price 55,90 ₽
+                                .slider-card__new-price 42,30 ₽
+                            .slider-card__icon
+                                button.btn.btn-rounded
+                                    .btn-rounded__img
+                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                .slider-card.swiper-slide
+                    a.slider-card__link(href="/product.html") 
+                        img.slider-img(src="images/sliders/main/8.png", alt="slider image 1")
+                    .slider-card__content
+                        .slider-card__title Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20
+                        .slider-card__bottom
+                            .slider-card__price
+                                .slider-card__old-price 55,90 ₽
+                                .slider-card__new-price 42,30 ₽
+                            .slider-card__icon
+                                button.btn.btn-rounded
+                                    .btn-rounded__img
+                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                .slider-card.swiper-slide
+                    a.slider-card__link(href="/product.html") 
+                        img.slider-img(src="images/sliders/main/9.png", alt="slider image 1")
+                    .slider-card__content
+                        .slider-card__title Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20
+                        .slider-card__bottom
+                            .slider-card__price
+                                .slider-card__old-price 55,90 ₽
+                                .slider-card__new-price 42,30 ₽
+                            .slider-card__icon
+                                button.btn.btn-rounded
+                                    .btn-rounded__img
+                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                .slider-card.swiper-slide
+                    a.slider-card__link(href="/product.html") 
+                        img.slider-img(src="images/sliders/main/9.png", alt="slider image 1")
+                    .slider-card__content
+                        .slider-card__title Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20
+                        .slider-card__bottom
+                            .slider-card__price
+                                .slider-card__old-price 55,90 ₽
+                                .slider-card__new-price 42,30 ₽
+                            .slider-card__icon
+                                button.btn.btn-rounded
+                                    .btn-rounded__img
+                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                .slider-card.swiper-slide
+                    a.slider-card__link(href="/product.html") 
+                        img.slider-img(src="images/sliders/main/9.png", alt="slider image 1")
+                    .slider-card__content
+                        .slider-card__title Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20
+                        .slider-card__bottom
+                            .slider-card__price
+                                .slider-card__old-price 55,90 ₽
+                                .slider-card__new-price 42,30 ₽
+                            .slider-card__icon
+                                button.btn.btn-rounded
+                                    .btn-rounded__img
+                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                            path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+        section.section.section-main
+            .section-menu
+                ul.section-menu__list
+                    li.section-menu__item
+                        p 1 560 ₽
+                        a.btn.btn-rounded(href="/cabinet-orders.html")
+                            .btn-badge 2
+                            .btn-rounded__img
+                                svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                    path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                    path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                    li.section-menu__item
+                        button.btn.btn-rounded
+                            .btn-rounded__img
+                                svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                    path(d="M13 2V9H20" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                        
+                    li.section-menu__item
+                        button.btn.btn-rounded
+                            .btn-rounded__img
+                                svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M26.6666 28V25.3333C26.6666 23.9188 26.1047 22.5623 25.1045 21.5621C24.1043 20.5619 22.7477 20 21.3333 20H10.6666C9.2521 20 7.89554 20.5619 6.89535 21.5621C5.89515 22.5623 5.33325 23.9188 5.33325 25.3333V28" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                    path(d="M16.0001 14.6667C18.9456 14.6667 21.3334 12.2789 21.3334 9.33333C21.3334 6.38781 18.9456 4 16.0001 4C13.0546 4 10.6667 6.38781 10.6667 9.33333C10.6667 12.2789 13.0546 14.6667 16.0001 14.6667Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+            
+            .swiper.section-slider__main
+                .swiper-wrapper
+                    .section-slider.swiper-slide
+                        .container
+                            .section__info
+                                .section__info-content
+                                    .section__info-price.title-1 250 ₽/шт
+                                    .section__info-title.title-2 Корнишоны «Кубаночка»
+                                    .section__info-subtitle (1-3 см) 680 г. 1/8
+                                    .section__info-text.
+                                        Корнишоны "Кубаночка" настоящая находка. Огурчики упругие, довольно
+                                        плотные, очень хрустящие. Рассол 
+                                        в меру пряный с низким содержанием
+                                        уксуса. Отлично влияют на пищеварение, повышают аппетит. Среди
+                                        составляющих огурцов есть калий, который необходим 
+                                        для нормальной
+                                        работоспособности мышц сердца 
+                                        и почек.
+                                    .section__info-btns
+                                        button.btn В Корзину
+                                        button.btn.btn-outlined Подробнее
+
+                                .section__info-image-adaptive
+                                    img(src="images/section/section-main/1-big.png" alt="")
+
+                                .section-slider__main-images.section__info-images
+                                    .section__info-bg
+                                        .section__info-line
+                                            .section__info-pictures
+                                                a.section__info-pictures-wrapper(href="#")
+                                                    img.section__info-picture(src="images/section/section-main/pic1.png", alt="")
+                                                a.section__info-pictures-wrapper(href="#")
+                                                    img.section__info-picture(src="images/section/section-main/pic2.png", alt="")
+                                                a.section__info-pictures-wrapper(href="#")
+                                                    img.section__info-picture(src="images/section/section-main/pic3.png", alt="")
+                                                a.section__info-pictures-wrapper(href="#")
+                                                    img.section__info-picture(src="images/section/section-main/pic4.png", alt="")
+                                                a.section__info-pictures-wrapper(href="#")
+                                                    img.section__info-picture(src="images/section/section-main/pic5.png", alt="")
+                                            .section__info-dashed
+                                                svg(width="550" height="303" viewBox="0 0 550 303" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                    circle(cx="281" cy="281" r="280" stroke="#82BA01" stroke-width="2" stroke-dasharray="10 20")
+                                    .section__info-wrapper
+                                        img.section__info-img(src="images/section/section-main/1.png" alt="")
+                        
+                    .section-slider.swiper-slide
+                        .container
+                            .section__info
+                                .section__info-content
+                                    .section__info-price.title-1 250 ₽/шт
+                                    .section__info-title.title-2 Корнишоны «Кубаночка»
+                                    .section__info-subtitle (1-3 см) 680 г. 1/8
+                                    .section__info-text.
+                                        Корнишоны "Кубаночка" настоящая находка. Огурчики упругие, довольно
+                                        плотные, очень хрустящие. Рассол 
+                                        в меру пряный с низким содержанием
+                                        уксуса. Отлично влияют на пищеварение, повышают аппетит. Среди
+                                        составляющих огурцов есть калий, который необходим 
+                                        для нормальной
+                                        работоспособности мышц сердца 
+                                        и почек.
+                                    .section__info-btns
+                                        button.btn В Корзину
+                                        button.btn.btn-outlined Подробнее
+
+                                .section__info-images
+                                    .section__info-bg
+                                        .section__info-line
+                                            .section__info-pictures
+                                                a.section__info-pictures-wrapper(href="#")
+                                                    img.section__info-picture(src="images/section/section-main/pic1.png", alt="")
+                                                a.section__info-pictures-wrapper(href="#")
+                                                    img.section__info-picture(src="images/section/section-main/pic2.png", alt="")
+                                                a.section__info-pictures-wrapper(href="#")
+                                                    img.section__info-picture(src="images/section/section-main/pic3.png", alt="")
+                                                a.section__info-pictures-wrapper(href="#")
+                                                    img.section__info-picture(src="images/section/section-main/pic4.png", alt="")
+                                                a.section__info-pictures-wrapper(href="#")
+                                                    img.section__info-picture(src="images/section/section-main/pic5.png", alt="")
+                                            .section__info-dashed
+                                                svg(width="550" height="303" viewBox="0 0 550 303" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                    circle(cx="281" cy="281" r="280" stroke="#82BA01" stroke-width="2" stroke-dasharray="10 20")
+                                    .section__info-wrapper
+                                        img.section__info-img(src="images/section/section-main/1.png" alt="")
+
+
+                .section__info-slider-buttons
+                    button.btn.btn-rounded.btn-rounded--filled-active.btn-prev-1
+                        .btn-rounded__img
+                            svg(width="12" height="12" viewBox="0 0 14 14" fill="" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M13 7L13.7071 7.70711C14.0976 7.31658 14.0976 6.68342 13.7071 6.29289L13 7ZM6.29289 12.2929C5.90237 12.6834 5.90237 13.3166 6.29289 13.7071C6.68342 14.0976 7.31658 14.0976 7.70711 13.7071L6.29289 12.2929ZM7.70711 0.292893C7.31658 -0.0976315 6.68342 -0.0976315 6.29289 0.292893C5.90237 0.683417 5.90237 1.31658 6.29289 1.70711L7.70711 0.292893ZM1 6C0.447715 6 0 6.44772 0 7C0 7.55228 0.447715 8 1 8L1 6ZM12.2929 6.29289L6.29289 12.2929L7.70711 13.7071L13.7071 7.70711L12.2929 6.29289ZM6.29289 1.70711L12.2929 7.70711L13.7071 6.29289L7.70711 0.292893L6.29289 1.70711ZM1 8H13V6L1 6L1 8Z" fill="")
+
+                    button.btn.btn-rounded.btn-rounded--filled-active.btn-next-1
+                        .btn-rounded__img
+                            svg(width="12" height="12" viewBox="0 0 14 14" fill="" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M13 7L13.7071 7.70711C14.0976 7.31658 14.0976 6.68342 13.7071 6.29289L13 7ZM6.29289 12.2929C5.90237 12.6834 5.90237 13.3166 6.29289 13.7071C6.68342 14.0976 7.31658 14.0976 7.70711 13.7071L6.29289 12.2929ZM7.70711 0.292893C7.31658 -0.0976315 6.68342 -0.0976315 6.29289 0.292893C5.90237 0.683417 5.90237 1.31658 6.29289 1.70711L7.70711 0.292893ZM1 6C0.447715 6 0 6.44772 0 7C0 7.55228 0.447715 8 1 8L1 6ZM12.2929 6.29289L6.29289 12.2929L7.70711 13.7071L13.7071 7.70711L12.2929 6.29289ZM6.29289 1.70711L12.2929 7.70711L13.7071 6.29289L7.70711 0.292893L6.29289 1.70711ZM1 8H13V6L1 6L1 8Z" fill="")
+
+        section.section.section-categories
+            .container
+                .section__title
+                    .title-2 Популярные категории
+                    a.link(href="/catalog.html") Смотреть все
+
+                .section-categories__slider.swiper
+                    .swiper-wrapper
+                        .category-card.swiper-slide
+                            .category-card__picture
+                                img.category-card__img(src="images/categories/1.jpg", alt="category 1")
+                            .category-card__content
+                                .category-card__title.title-4 Молочная продукция
+                        .category-card.swiper-slide
+                            .category-card__picture
+                                img.category-card__img(src="images/categories/2.jpg", alt="category 2")
+                            .category-card__content
+                                .category-card__title.title-4 Мясная продукция
+                        .category-card.swiper-slide
+                            .category-card__picture
+                                img.category-card__img(src="images/categories/3.jpg", alt="category 3")
+                            .category-card__content
+                                .category-card__title.title-4 Овощи
+                        .category-card.swiper-slide
+                            .category-card__picture
+                                img.category-card__img(src="images/categories/4.jpg", alt="category 4")
+                            .category-card__content
+                                .category-card__title.title-4 Ягоды
+                        .category-card.swiper-slide
+                            .category-card__picture
+                                img.category-card__img(src="images/categories/1.jpg", alt="category 5")
+                            .category-card__content
+                                .category-card__title.title-4 Молочная продукция
+                        .category-card.swiper-slide
+                            .category-card__picture
+                                img.category-card__img(src="images/categories/2.jpg", alt="category 6")
+                            .category-card__content
+                                .category-card__title.title-4 Мясная продукция
+                        .category-card.swiper-slide
+                            .category-card__picture
+                                img.category-card__img(src="images/categories/3.jpg", alt="category 7")
+                            .category-card__content
+                                .category-card__title.title-4 Овощи
+                        .category-card.swiper-slide
+                            .category-card__picture
+                                img.category-card__img(src="images/categories/4.jpg", alt="category 8")
+                            .category-card__content
+                                .category-card__title.title-4 Ягоды
+                    .swiper-scrollbar.swiper-scrollbar-category
+
+        section.section.section-promotional
+            .container
+                .section__title.mb-5
+                    .title-2 Акционные товары
+                    .link Смотреть все
+                .swiper.section-promotional__slider
+                    .swiper-wrapper
+                        .section-promotional__slide.section__info.swiper-slide
+                            .section__info-content
+                                .section__info-content
+                                    .section__info-title.title-3 Малина свежемороженая
+                                    .section__info-text.
+                                        Малина – очень вкусная и ароматная ягода. Она обладает жаропонижающим и 
+                                        противовоспалительным эффектом, богата железом, медью и витаминами А, Е, РР, В2. 
+                                        На производстве используется технология шоковой заморозки, что позволяет сохранить вкус, 
+                                        аромат и пользу свежих ягод.
+                                        В свежем виде эта ягода – настоящее лакомство. Кроме того 
+                                        с ней можно готовить различные десерты и пироги.
+                                    .section__info-price.title-1 250 ₽/шт
+                                        span.section__info-price-old.title-3 350 ₽/шт
+                                    .section__info-btns
+                                        button.btn В Корзину
+                                        button.btn.btn-outlined Подробнее
+                                    .section__info-slider-buttons
+                                        
+                            .section__info-images
+                                img.section__info-img(src="images/section/section-main/promotional.jpg")
+
+                        .section__info.swiper-slide
+                            .section__info-content
+                                .section__info-content
+                                    .section__info-title.title-3 Малина свежемороженая
+                                    .section__info-text.
+                                        Малина – очень вкусная и ароматная ягода. Она обладает жаропонижающим и 
+                                        противовоспалительным эффектом, богата железом, медью и витаминами А, Е, РР, В2. 
+                                        На производстве используется технология шоковой заморозки, что позволяет сохранить вкус, 
+                                        аромат и пользу свежих ягод.
+                                        В свежем виде эта ягода – настоящее лакомство. Кроме того 
+                                        с ней можно готовить различные десерты и пироги.
+                                    .section__info-price.title-1 250 ₽/шт
+                                        span.section__info-price-old.title-3 350 ₽/шт
+                                    .section__info-btns
+                                        button.btn В Корзину
+                                        button.btn.btn-outlined Подробнее
+                                    .section__info-slider-buttons
+                                        
+                            .section__info-images
+                                img.section__info-img(src="images/section/section-main/promotional.jpg")
+
+                        .section__info.swiper-slide
+                            .section__info-content
+                                .section__info-content
+                                    .section__info-title.title-3 Малина свежемороженая
+                                    .section__info-text.
+                                        Малина – очень вкусная и ароматная ягода. Она обладает жаропонижающим и 
+                                        противовоспалительным эффектом, богата железом, медью и витаминами А, Е, РР, В2. 
+                                        На производстве используется технология шоковой заморозки, что позволяет сохранить вкус, 
+                                        аромат и пользу свежих ягод.
+                                        В свежем виде эта ягода – настоящее лакомство. Кроме того 
+                                        с ней можно готовить различные десерты и пироги.
+                                    .section__info-price.title-1 250 ₽/шт
+                                        span.section__info-price-old.title-3 350 ₽/шт
+                                    .section__info-btns
+                                        button.btn В Корзину
+                                        button.btn.btn-outlined Подробнее
+                                    .section__info-slider-buttons
+                                        
+                            .section__info-images
+                                img.section__info-img(src="images/section/section-main/promotional.jpg")
+
+                        .section__info.swiper-slide
+                            .section__info-content
+                                .section__info-content
+                                    .section__info-title.title-3 Малина свежемороженая
+                                    .section__info-text.
+                                        Малина – очень вкусная и ароматная ягода. Она обладает жаропонижающим и 
+                                        противовоспалительным эффектом, богата железом, медью и витаминами А, Е, РР, В2. 
+                                        На производстве используется технология шоковой заморозки, что позволяет сохранить вкус, 
+                                        аромат и пользу свежих ягод.
+                                        В свежем виде эта ягода – настоящее лакомство. Кроме того 
+                                        с ней можно готовить различные десерты и пироги.
+                                    .section__info-price.title-1 250 ₽/шт
+                                        span.section__info-price-old.title-3 350 ₽/шт
+                                    .section__info-btns
+                                        button.btn В Корзину
+                                        button.btn.btn-outlined Подробнее
+                                    .section__info-slider-buttons
+                                        
+                            .section__info-images
+                                img.section__info-img(src="images/section/section-main/promotional.jpg")
+
+
+                    .section-promotional__btns.swiper-buttons
+                        button.section-promotional__btn.swiper-button-prev.btn.btn-rounded.btn-rounded--filled-active
+                            .btn-rounded__img
+                                svg(width="12" height="12" viewBox="0 0 14 14" fill="" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M13 7L13.7071 7.70711C14.0976 7.31658 14.0976 6.68342 13.7071 6.29289L13 7ZM6.29289 12.2929C5.90237 12.6834 5.90237 13.3166 6.29289 13.7071C6.68342 14.0976 7.31658 14.0976 7.70711 13.7071L6.29289 12.2929ZM7.70711 0.292893C7.31658 -0.0976315 6.68342 -0.0976315 6.29289 0.292893C5.90237 0.683417 5.90237 1.31658 6.29289 1.70711L7.70711 0.292893ZM1 6C0.447715 6 0 6.44772 0 7C0 7.55228 0.447715 8 1 8L1 6ZM12.2929 6.29289L6.29289 12.2929L7.70711 13.7071L13.7071 7.70711L12.2929 6.29289ZM6.29289 1.70711L12.2929 7.70711L13.7071 6.29289L7.70711 0.292893L6.29289 1.70711ZM1 8H13V6L1 6L1 8Z" fill="")
+
+                        .section-promotional__pagination.swiper-pagination
+
+                        button.section-promotional__btn.swiper-button-next.btn.btn-rounded.btn-rounded--filled-active
+                            .btn-rounded__img
+                                svg(width="12" height="12" viewBox="0 0 14 14" fill="" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M13 7L13.7071 7.70711C14.0976 7.31658 14.0976 6.68342 13.7071 6.29289L13 7ZM6.29289 12.2929C5.90237 12.6834 5.90237 13.3166 6.29289 13.7071C6.68342 14.0976 7.31658 14.0976 7.70711 13.7071L6.29289 12.2929ZM7.70711 0.292893C7.31658 -0.0976315 6.68342 -0.0976315 6.29289 0.292893C5.90237 0.683417 5.90237 1.31658 6.29289 1.70711L7.70711 0.292893ZM1 6C0.447715 6 0 6.44772 0 7C0 7.55228 0.447715 8 1 8L1 6ZM12.2929 6.29289L6.29289 12.2929L7.70711 13.7071L13.7071 7.70711L12.2929 6.29289ZM6.29289 1.70711L12.2929 7.70711L13.7071 6.29289L7.70711 0.292893L6.29289 1.70711ZM1 8H13V6L1 6L1 8Z" fill="")
+
+        section.section.section-about
+            .container
+                .section__title.mb-5
+                    .title-2 О компании
+                .section-about__content
+                    .section-about__left
+                        .section-about__text.text.
+                            Ясность нашей позиции очевидна:&nbsp;укрепление и развитие внутренней 
+                            структуры обеспечивает широкому кругу (специалистов) участие в 
+                            формировании модели развития. Экономическая повестка сегодняшнего 
+                            дня прекрасно подходит для реализации экономической целесообразности 
+                            принимаемых решений. 
+                            Как принято считать, предприниматели в сети интернет формируют 
+                            глобальную экономическую сеть и при этом - разоблачены!
+                    .section-about__right
+                        .about-card
+                            img.about-card__img(src="images/section/section-about/1.svg", alt="")
+                            .about-card__title.text-small-bold Оптовые цены
+                        .about-card
+                            img.about-card__img(src="images/section/section-about/2.svg", alt="")
+                            .about-card__title.text-small-bold Доставка по городу и краю
+                        .about-card
+                            img.about-card__img(src="images/section/section-about/3.svg", alt="")
+                            .about-card__title.text-small-bold 15 лет на рынке
+
+        section.section.section-news
+            .container
+                .section__title.mb-5
+                    .title-2 Новости
+                    a.link(href="/news.html") Все новости
+                .section-news__slider.swiper
+                    .swiper-wrapper
+                        .news-card.swiper-slide
+                            a.news-card__img-wrapper(href="#")
+                                img.news-card__img(src="images/section/section-news/1.jpg")
+                            .news-card__content
+                                .news-card__date.text-small 15.12.2021
+                                .news-card__title.title-4 «Самое ценное в нашем мире — овощи»
+                        .news-card.swiper-slide
+                            a.news-card__img-wrapper(href="#")
+                                img.news-card__img(src="images/section/section-news/2.jpg")
+                            .news-card__content
+                                .news-card__date.text-small 15.12.2021
+                                .news-card__title.title-4 Чувсто вкуса
+                        .news-card.swiper-slide
+                            a.news-card__img-wrapper(href="#")
+                                img.news-card__img(src="images/section/section-news/3.jpg")
+                            .news-card__content
+                                .news-card__date.text-small 15.12.2021
+                                .news-card__title.title-4 “TDA” установила новый мировой рекорд Гиннесса
+                        .news-card.swiper-slide
+                            a.news-card__img-wrapper(href="#")
+                                img.news-card__img(src="images/section/section-news/2.jpg")
+                            .news-card__content
+                                .news-card__date.text-small 15.12.2021
+                                .news-card__title.title-4 Чувсто вкуса
+
+                    .swiper-scrollbar.swiper-scrollbar-news
+
+        
+                        
+    include pug/includes/footer
+
+    //- Back to top
+    //- a.back-top-btn(href="#top" aria-label="back to top" data-back-top-btn)
+    //-     ion-icon(name="arrow-up" aria-hidden="true")

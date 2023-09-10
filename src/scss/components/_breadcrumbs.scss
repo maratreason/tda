@@ -1,0 +1,43 @@
+.breadcrumbs {
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+   
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #A8A8A8;
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+
+            &::after {
+                content: "";
+                width: 1px;
+                height: 1.2rem;
+                background-color: #A8A8A8;
+                position: absolute;
+                top: 0.8rem;
+                right: -2rem;
+
+            }
+        }
+
+        &:last-child {
+            color: var(--violet);
+        }
+    }
+
+    &__link {
+        border-bottom: 1px solid #A8A8A8;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}

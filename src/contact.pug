@@ -1,0 +1,113 @@
+extends pug/base
+
+append content
+    include pug/includes/header
+
+    .section.section-contact
+        .section-menu
+            ul.section-menu__list
+                li.section-menu__item
+                    p 1 560 ₽
+                    button.btn.btn-rounded
+                        .btn-badge 2
+                        .btn-rounded__img
+                            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                li.section-menu__item
+                    button.btn.btn-rounded
+                        .btn-rounded__img
+                            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M13 2V9H20" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                    
+                li.section-menu__item
+                    button.btn.btn-rounded
+                        .btn-rounded__img
+                            svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M26.6666 28V25.3333C26.6666 23.9188 26.1047 22.5623 25.1045 21.5621C24.1043 20.5619 22.7477 20 21.3333 20H10.6666C9.2521 20 7.89554 20.5619 6.89535 21.5621C5.89515 22.5623 5.33325 23.9188 5.33325 25.3333V28" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M16.0001 14.6667C18.9456 14.6667 21.3334 12.2789 21.3334 9.33333C21.3334 6.38781 18.9456 4 16.0001 4C13.0546 4 10.6667 6.38781 10.6667 9.33333C10.6667 12.2789 13.0546 14.6667 16.0001 14.6667Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+
+        .container
+            +breadcrumbs("Главная", "Контакты")
+
+            .contact
+                h2.title-2 Контакты
+
+                .contact-map
+                    .contact-map__buttons
+                        button.btn.btn-sm
+                            span г. Владивосток
+                        button.btn.btn-sm.btn-outlined
+                            span г. Уссурийск
+                        button.btn.btn-sm.btn-outlined
+                            span г. Находка
+                    iframe.contact-map__frame(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12610.692492634298!2d-122.41801228349344!3d37.797699595721355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f1e87de297%3A0xc8480d80940cc6a9!2zNzg0IEdyZWVuIFN0LCBTYW4gRnJhbmNpc2NvLCBDQSA5NDEzMywg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1661129770192!5m2!1sru!2sru"
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade")
+                    
+                    .contact-map__info
+                        .contact-map__item
+                            .contact-map__title.text-small-bold Адрес:
+                            .contact-map__text.text-small 390039, г. Владивосток,
+                                br
+                                | ул. Бирюзова, д.3
+                        .contact-map__item
+                            .contact-map__title.text-small-bold Телефон:
+                            .contact-map__text.text-small +7 (123) 456-78-90
+                        .contact-map__item
+                            .contact-map__title.text-small-bold E-mail:
+                            .contact-map__text.text-small info@mail.ru
+                        .contact-map__item
+                            .contact-map__title.text-small-bold Время работы:
+                            .contact-map__text.text-small Пн-Вс: 9:00 - 20:00
+
+                    .contact-bottom
+                        .contact-bottom__requisites
+                            h3.contact-bottom__title.title-3 Реквизиты
+                            ul.contact-bottom__list
+                                li.contact-bottom__item ОГРН:
+                                    span 320508100021972
+                                li.contact-bottom__item ИНН:
+                                    span 682902209604
+                                li.contact-bottom__item Р/СЧ. №:
+                                    span 4080 2810 9028 1000 3122
+                                li.contact-bottom__item Корр. Счёт:
+                                    span 3010 1810 2000 0000 0593
+                                li.contact-bottom__item БИК:
+                                    span 044525593
+                                li.contact-bottom__item Банк:
+                                    span АО «АЛЬФА-Банк»
+                        .contact-bottom__form
+                            h3.contact-bottom__title.title-3 Связаться с нами
+
+                            .contact-bottom__form-block
+                                .form-group
+                                    label.label Имя:
+                                    input.input(placeholder="Ваше имя")
+                                .form-group
+                                    label.label E-mail:
+                                    input.input(placeholder="example@mail.ru")
+                            
+                            .contact-bottom__form-textarea
+                                label.label Сообщение:
+                                textarea.textarea(name="") Ваше сообщение
+
+                            .contact-bottom__form-buttons
+                                button.btn.btn-dropdown(style="width: 190px")
+                                    .btn-dropdown__icon
+                                        img(src="images/icons/envelope.svg", alt="")
+                                    .btn-dropdown__text Отправить
+                                p.contact-bottom__form-text.text-small
+                                    | Нажимая кнопку "Отправить", я даю своё согласие 
+                                    | на обработку персональных данных. 
+                                    a.link(href="#") Подробнее о защите персональных данных. 
+                            
+
+
+    include pug/includes/footer

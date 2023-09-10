@@ -1,0 +1,212 @@
+.card {
+    width: 410px;
+    height: 435px;
+    background: transparent;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: var(--transition-2);
+    cursor: pointer;
+
+    &__img {
+        height: 300px;
+    }
+
+    &__content {
+        padding: 20px;
+
+        &-date {
+            color: var(--gray);
+        }
+    }
+
+    &:hover {
+        background-color: var(--white);
+        box-shadow: 0px 20px 50px -8px rgba(69, 78, 96, 0.15);
+    }
+}
+
+/**
+ * Product card styles
+ */
+.product-card {
+    background: var(--white);
+    border: 1px solid var(--light);
+    border-radius: 6px;
+    width: 29.5rem;
+    padding: 20px;
+    position: relative;
+    transition: var(--transition-2);
+
+    &__img {
+        cursor: pointer;
+    }
+
+    &__box {
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        color: var(--white);
+    }
+
+    &__colors {
+        border-radius: 0px 15px 15px 0px;
+        height: 30px;
+        width: max-content;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__colors-red {
+        background: var(--product-color-red);
+    }
+
+    &__colors-green {
+        background: var(--product-color-green);
+    }
+
+    &__colors-blue {
+        background: var(--product-color-blue);
+    }
+
+    &__title {
+        font-size: 1.8rem;
+    }
+
+    &__old-price {
+        text-decoration: line-through;
+        color: var(--violet);
+    }
+
+    &__price {
+        margin-bottom: 1.5rem;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__count {
+        display: flex;
+        align-items: center;
+        width: 120px;
+        height: 40px;
+    }
+
+    &__count-number {
+        width: 44px;
+        text-align: center;
+    }
+
+    &:hover {
+        box-shadow: 0px 20px 50px -8px rgba(69, 78, 96, 0.15);
+        border-color: transparent;
+    }
+}
+
+/**
+ * Category card styles
+ */
+.category-card {
+    max-width: 30rem;
+    width: 23.2%;
+    max-height: 25.5rem;
+    border: 1px solid var(--light);
+    border-radius: var(--radius-6);
+    background: var(--white);
+    overflow: hidden;
+    transition: var(--transition-1);
+
+    &__picture {
+        width: 100%;
+        // height: 100%;
+        object-fit: cover;
+    }
+
+    &__content {
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    &:hover {
+        box-shadow: 0px 20px 50px -8px rgba(69, 78, 96, 0.15);
+    }
+}
+
+/**
+ * About card
+ */
+.about-card {
+    width: 19rem;
+    height: 15rem;
+    border-radius: var(--radius-6);
+    box-shadow: 0px 20px 50px -8px rgba(69, 78, 96, 0.15);
+    padding: 2rem;
+
+    &__img {
+        height: 4rem;
+        margin: auto;
+    }
+
+    &__title {
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+/**
+ * News card
+ */
+.news-card {
+    max-width: 41rem;
+    max-height: 43.5rem;
+    border-radius: var(--radius-6);
+    overflow: hidden;
+    transition: var(--transition-1);
+
+    &__img {
+        height: 30rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__content {
+        padding: 2rem;
+    }
+
+    &__date {
+        color: var(--gray);
+        margin-bottom: 1rem;
+    }
+
+    &:hover {
+        box-shadow: 0px 20px 50px -8px rgba(69, 78, 96, 0.15);
+    }
+}
+
+/**
+ * Count button styles
+ */
+.count-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    background: var(--gray-light);
+    height: 100%;
+
+    &__minus {
+        border-radius: 6px 0px 0px 6px;
+    }
+
+    &__plus {
+        border-radius: 0px 6px 6px 0px;
+    }
+}

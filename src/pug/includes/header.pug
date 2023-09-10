@@ -1,0 +1,241 @@
+.top-pages-menu
+    ul.top-pages-menu__list
+        li.top-pages-menu__item
+            a.top-pages-menu__link(href="/") Index Page
+        li.top-pages-menu__item
+            a.top-pages-menu__link(href="/catalog.html") Catalog Page
+        li.top-pages-menu__item
+            a.top-pages-menu__link(href="/catalog-detail.html") Catalog Detail Page
+        li.top-pages-menu__item
+            a.top-pages-menu__link(href="/product.html") Product Page
+        li.top-pages-menu__item
+            a.top-pages-menu__link(href="/news-list.html") News List Page
+        li.top-pages-menu__item
+            a.top-pages-menu__link(href="/news.html") News Page
+        li.top-pages-menu__item
+            a.top-pages-menu__link(href="/contact.html") Contact Page
+        li.top-pages-menu__item
+            a.top-pages-menu__link(href="/cabinet-orders.html") Cabinet Orders Page
+        li.top-pages-menu__item
+            a.top-pages-menu__link(href="/cabinet-profile.html") Cabinet Profile Page
+        li.top-pages-menu__item
+            a.top-pages-menu__link(href="/ui-kit.html") UI KIT Page
+
+header.header
+    .header-wrapper
+        .container
+            .header__top
+                a.header__top-logo.logo(href="/")
+                    svg(width="100" height="35" viewBox="0 0 100 35" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        path(d="M26.9428 0V6.83049H17.7138V35H9.22902V6.83049H0V0H26.9428Z" fill="#82BA01")
+                        path(d="M44.2507 0C47.9224 0 51.1311 0.731244 53.8766 2.19373C56.6222 3.65622 58.7392 5.717 60.2278 8.37607C61.7494 11.0019 62.5102 14.0432 62.5102 17.5C62.5102 20.9236 61.7494 23.9649 60.2278 26.6239C58.7392 29.283 56.6056 31.3438 53.827 32.8063C51.0815 34.2688 47.8893 35 44.2507 35H31.201V0H44.2507ZM43.7049 27.6211C46.9135 27.6211 49.411 26.7403 51.1972 24.9786C52.9835 23.217 53.8766 20.7241 53.8766 17.5C53.8766 14.2759 52.9835 11.7664 51.1972 9.97151C49.411 8.17664 46.9135 7.2792 43.7049 7.2792H39.6858V27.6211H43.7049Z" fill="#82BA01")
+                        path(d="M88.9351 28.8177H75.9351L73.8511 35H64.9694L77.5725 0H87.3969L100 35H91.0191L88.9351 28.8177ZM86.7519 22.2365L82.4351 9.42308L78.1679 22.2365H86.7519Z" fill="#82BA01")
+                
+                .header__top-search.search-input
+                    input(type="text" placeholder="Поиск")
+                    button.search-input__btn
+                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M11 17C15.4183 17 19 13.4183 19 9C19 4.58172 15.4183 1 11 1C6.58172 1 3 4.58172 3 9C3 13.4183 6.58172 17 11 17Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                            path(d="M21.0004 18.9999L16.6504 14.6499" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                .header__top-city
+                    .top__icon
+                        button.btn.btn-rounded
+                            .btn-rounded__img
+                                svg(width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M1 10L20 1L11 20L9 12L1 10Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+                    .top__text
+                        .city__label Выберите филиал:
+                        .city__select г. Владивосток
+
+                .header__top-phone
+                    .top__icon
+                        button.btn.btn-rounded
+                            .btn-rounded__img
+                                svg(width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M21.0001 15.92V18.92C21.0012 19.1985 20.9441 19.4741 20.8326 19.7293C20.721 19.9845 20.5574 20.2136 20.3521 20.4018C20.1469 20.5901 19.9046 20.7335 19.6408 20.8227C19.377 20.9119 19.0974 20.945 18.8201 20.92C15.7429 20.5856 12.7871 19.5341 10.1901 17.85C7.77388 16.3146 5.72539 14.2661 4.19006 11.85C2.50003 9.24118 1.4483 6.27097 1.12006 3.17997C1.09507 2.90344 1.12793 2.62474 1.21656 2.3616C1.30518 2.09846 1.44763 1.85666 1.63482 1.6516C1.82202 1.44653 2.04986 1.28268 2.30385 1.1705C2.55783 1.05831 2.8324 1.00024 3.11006 0.999975H6.11006C6.59536 0.995198 7.06585 1.16705 7.43382 1.48351C7.80179 1.79996 8.04213 2.23942 8.11005 2.71997C8.23668 3.68004 8.47151 4.6227 8.81006 5.52997C8.9446 5.8879 8.97372 6.27689 8.89396 6.65086C8.81421 7.02482 8.62892 7.36809 8.36005 7.63998L7.09006 8.90997C8.51361 11.4135 10.5865 13.4864 13.0901 14.91L14.3601 13.64C14.6319 13.3711 14.9752 13.1858 15.3492 13.1061C15.7231 13.0263 16.1121 13.0554 16.4701 13.19C17.3773 13.5285 18.32 13.7634 19.2801 13.89C19.7658 13.9585 20.2095 14.2032 20.5266 14.5775C20.8437 14.9518 21.0122 15.4296 21.0001 15.92Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                    .top__text
+                        .top__phone +7 (123) 456-78-90
+                        .top__phone +7 (123) 456-78-90
+
+                .header__top-btn
+                    button.btn.btn-dropdown.btn-shadow
+                        .btn-dropdown__icon
+                            img(src="images/icons/envelope.svg", alt="")
+                        .btn-dropdown__text Написать нам
+
+                .header__top-buttons
+                    button.btn.btn-rounded
+                        .btn-badge 2
+                        .btn-rounded__img
+                            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M3 6H21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                    button.btn.btn-rounded
+                        .btn-rounded__img
+                            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M13 2V9H20" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                    button.btn.btn-rounded
+                        .btn-rounded__img
+                            svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M26.6666 28V25.3333C26.6666 23.9188 26.1047 22.5623 25.1045 21.5621C24.1043 20.5619 22.7477 20 21.3333 20H10.6666C9.2521 20 7.89554 20.5619 6.89535 21.5621C5.89515 22.5623 5.33325 23.9188 5.33325 25.3333V28" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M16.0001 14.6667C18.9456 14.6667 21.3334 12.2789 21.3334 9.33333C21.3334 6.38781 18.9456 4 16.0001 4C13.0546 4 10.6667 6.38781 10.6667 9.33333C10.6667 12.2789 13.0546 14.6667 16.0001 14.6667Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+
+        .header__bottom
+            .container
+                .header__bottom-menu
+                    .header__bottom-btn
+                        button.btn.btn-dropdown(data-catalog-btn="true" style="width: 190px")
+                            .btn-dropdown__icon(data-btn-dropdown)
+                                img(src="images/icons/list.svg", alt="")
+                            .btn-dropdown__text Каталог
+                    ul.header__bottom-list
+                        li.header__bottom-item
+                            a.header__bottom-link(href="/catalog-detail.html") Молочная продукция
+                        li.header__bottom-item
+                            a.header__bottom-link(href="/catalog-detail.html") Мясная продукция
+                        li.header__bottom-item
+                            a.header__bottom-link(href="/catalog-detail.html") Напитки
+                        li.header__bottom-item
+                            a.header__bottom-link(href="/catalog-detail.html") Бакалея
+                        li.header__bottom-item
+                            a.header__bottom-link(href="/catalog-detail.html") Грибы
+                        li.header__bottom-item
+                            a.header__bottom-link(href="/catalog-detail.html") Крупы
+                        li.header__bottom-item
+                            a.header__bottom-link(href="/catalog-detail.html") Овощи
+                        li.header__bottom-item
+                            a.header__bottom-link(href="/catalog-detail.html") Ягоды
+
+        .catalog-menu(data-catalog-menu)
+            .container
+                .sitebar-wrapper
+                    .sitebar.sitebar-menu
+                        .catalog-menu__accordion(data-accordion)
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Новинки
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Овощи, фрукты, ягоды, зелень, грибы
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Кулинария
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Молоко, сыр, яйцо
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Мясо, птица, колбасы
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Рыба, икра, морепродукты
+                            .sitebar__box
+                                .sitebar__title.sitebar__title--active.accordion__title.title-4 Крупы, масло, консервы, соусы, орехи
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Вода,соки, напитки
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Новинки
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Овощи, фрукты, ягоды, зелень, грибы
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Кулинария
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Молоко, сыр, яйцо
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Мясо, птица, колбасы
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Рыба, икра, морепродукты
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Крупы, масло, консервы, соусы, орехи
+                            .sitebar__box
+                                .sitebar__title.accordion__title.title-4 Вода,соки, напитки
+
+                    //- sitebar-menu-content
+                    .sitebar-content
+                        h1.title-2 Крупы, масло, консервы, соусы, орехи
+
+                        .sitebar-content__wrapper
+                            .sitebar-content__block
+                                .sitebar-content__title.title-4 Орехи, сухофрукты, семечки
+
+                            .sitebar-content__block
+                                .sitebar-content__title.title-4 Растительное масло
+                                ul.sitebar-content__list
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Подсолнечное
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Оливковое
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Льняное
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Кукурузное
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Тыквенное
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Другие масла
+                            
+                            .sitebar-content__block
+                                .sitebar-content__title.title-4 Крупы, бобовые
+                                ul.sitebar-content__list
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Крупы
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Бобовые
+
+                            .sitebar-content__block
+                                .sitebar-content__title.title-4 Макаронные изделия
+
+                            .sitebar-content__block
+                                .sitebar-content__title.title-4 Мука, всё для выпечки
+                                ul.sitebar-content__list
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Смеси для выпечки
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Мука
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Всё для выпечки
+                            
+                            .sitebar-content__block
+                                .sitebar-content__title.title-4 Соусы, майонез
+                                ul.sitebar-content__list
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Майонез
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Кетчуп, томатная паста
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Соусы
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Заправки для салата
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Горчица, хрен
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Уксус
+
+                            .sitebar-content__block
+                                .sitebar-content__title.title-4 Сухие завтраки, каши, хлопья
+                                ul.sitebar-content__list
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Сухие завтраки
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Геркулес, хлопья, отруби
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Гранола, мюсли
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Каши быстрого приготовления
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Без сахара
+
+                            .sitebar-content__block
+                                .sitebar-content__title.title-4 Консервы, варенье, мёд
+                                ul.sitebar-content__list
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Овощные, грибные
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Оливки, маслины
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Мясные
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Рыбные, морепродукты
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Готовые блюда
+                                    li.sitebar-content__item
+                                        a.sitebar-content__link(href="/catalog.html") Мёд
